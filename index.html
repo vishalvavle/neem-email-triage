@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Modern Websites & Custom AI Assistants for Local Businesses | Neem Tech AI</title>
+  <meta name="description" content="We build high-converting websites and train intelligent AI assistants that learn your business, answer customer questions 24/7, and book appointments automatically.">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background visual effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-radial"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <i class="bi bi-leaf-fill logo-leaf"></i>
+        <span>Neem<span class="text-amber">Tech</span>AI</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#problem-solution" class="nav-link">Why AI</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#roi-calculator" class="nav-link">ROI Calculator</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-secondary btn-sm" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">View Plans</a>
+        <a href="javascript:void(0);" onclick="openNeemChat()" class="btn btn-primary btn-sm" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Free Audit</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section-padding">
+    <div class="hero-content reveal">
+      <div class="hero-badge">Next-Gen Local Commerce</div>
+      <h1>Modern Websites & <span class="text-amber">Custom AI Assistants</span> for Local Businesses.</h1>
+      <p>We build high-converting websites and train intelligent AI assistants that learn your business details, answer customer questions 24/7, and book appointments automatically.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary">
+          <span>Get Started</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <a href="#roi-calculator" class="btn btn-secondary">Calculate ROI</a>
+      </div>
+    </div>
+    
+    <!-- Phone Mockup AI Chat Simulator (Idea A) -->
+    <div class="hero-visual reveal" style="transition-delay: 0.2s;">
+      <div class="phone-mockup">
+        <div class="phone-notch">
+          <div class="phone-camera"></div>
+          <div class="phone-speaker"></div>
+        </div>
+        <div class="phone-screen">
+          
+          <div class="simulator-header">
+            <div class="industry-tabs" id="industry-tabs">
+              <button class="tab-btn active" data-industry="plumber">🪠 Plumber</button>
+              <button class="tab-btn" data-industry="dentist">🦷 Dentist</button>
+              <button class="tab-btn" data-industry="salon">💇‍♀️ Salon</button>
+              <button class="tab-btn" data-industry="lawyer">⚖️ Law Firm</button>
+            </div>
+          </div>
+          
+          <!-- Message Feed -->
+          <div class="chat-window" id="simulator-chat">
+            <!-- Populated dynamically by app.js -->
+          </div>
+          
+          <!-- Suggested Prompts -->
+          <div class="prompts-container">
+            <div class="prompt-tip">Tap a question to test the AI response:</div>
+            <div class="prompts-list" id="simulator-prompts" style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <!-- Populated dynamically by app.js -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem vs Solution Section -->
+  <section id="problem-solution" class="section-padding">
+    <div class="reveal">
+      <h2>Transforming How Local Businesses Convert Leads</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">Customers expect instant replies. If you take 30 minutes to answer, they have already called your competitor.</p>
+    </div>
+    
+    <div class="comparison-grid">
+      <!-- The Old Way -->
+      <div class="comparison-card negative reveal">
+        <span class="card-tag">The Old Way</span>
+        <h3>Losing Leads Daily</h3>
+        <ul class="comparison-list">
+          <li>
+            <i class="bi bi-x-circle-fill"></i>
+            <span><strong>Delayed email response:</strong> Customers wait hours for pricing quotes and look elsewhere.</span>
+          </li>
+          <li>
+            <i class="bi bi-x-circle-fill"></i>
+            <span><strong>Missed calls:</strong> You are busy doing work, so phone calls go straight to voicemail.</span>
+          </li>
+          <li>
+            <i class="bi bi-x-circle-fill"></i>
+            <span><strong>Outdated websites:</strong> Static pages that don't load well on mobile and fail to capture leads.</span>
+          </li>
+          <li>
+            <i class="bi bi-x-circle-fill"></i>
+            <span><strong>High support burden:</strong> Spending hours answering the same simple scheduling questions.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- The Neem Way -->
+      <div class="comparison-card positive reveal" style="transition-delay: 0.1s;">
+        <span class="card-tag">The Neem Way</span>
+        <h3>24/7 Autopilot Growth</h3>
+        <ul class="comparison-list">
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            <span><strong>Under 3-second responses:</strong> AI instantly replies to custom website questions.</span>
+          </li>
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            <span><strong>No missed opportunities:</strong> Every website visitor is engaged immediately to capture contact info.</span>
+          </li>
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            <span><strong>Ultra-fast websites:</strong> High-performance, modern, mobile-friendly design built for speed.</span>
+          </li>
+          <li>
+            <i class="bi bi-check-circle-fill"></i>
+            <span><strong>Automated calendar booking:</strong> The AI schedules bookings directly into your calendar.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section-padding">
+    <div class="reveal">
+      <h2>A Simple, Turnkey Setup</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">We handle the technical heavy lifting so you can focus on running your business.</p>
+    </div>
+    
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card reveal">
+        <div class="step-number">01</div>
+        <div class="step-icon">
+          <i class="bi bi-database-fill-gear"></i>
+        </div>
+        <h3>1. We Learn Your Business</h3>
+        <p>You provide your pricing sheet, FAQs, services, and scheduler. We feed this into your custom AI assistant so it becomes an expert on your business.</p>
+      </div>
+      
+      <!-- Step 2 -->
+      <div class="step-card reveal" style="transition-delay: 0.1s;">
+        <div class="step-number">02</div>
+        <div class="step-icon">
+          <i class="bi bi-rocket-takeoff-fill"></i>
+        </div>
+        <h3>2. We Launch Your Site</h3>
+        <p>We build a lightning-fast, high-converting website custom-branded for you and embed the intelligent AI assistant seamlessly on your domain.</p>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="step-card reveal" style="transition-delay: 0.2s;">
+        <div class="step-number">03</div>
+        <div class="step-icon">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+        <h3>3. Grow on Autopilot</h3>
+        <p>The AI answers questions, qualifies prospects, books appointments, and sends clean lead notifications straight to your text messages or CRM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator Section -->
+  <section id="roi-calculator" class="section-padding">
+    <div class="reveal">
+      <h2>See Your Growth Potential</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">Find out how much hidden revenue you can capture by answering website leads instantly.</p>
+    </div>
+    
+    <div class="calculator-wrapper reveal">
+      <!-- Sliders -->
+      <div class="calc-inputs">
+        <!-- Monthly Traffic -->
+        <div class="input-group">
+          <div class="label-container">
+            <label for="slider-traffic">Estimated Monthly Website Visitors</label>
+            <span class="calc-val" id="val-traffic">1,000</span>
+          </div>
+          <input type="range" id="slider-traffic" min="100" max="5000" step="50" value="1000">
+        </div>
+        
+        <!-- Average Job Value -->
+        <div class="input-group">
+          <div class="label-container">
+            <label for="slider-value">Average Customer / Job Value</label>
+            <span class="calc-val" id="val-value">$200</span>
+          </div>
+          <input type="range" id="slider-value" min="50" max="2000" step="25" value="200">
+        </div>
+
+        <!-- Missed Leads Capture -->
+        <div class="input-group">
+          <div class="label-container">
+            <label for="slider-conversion">Lead Capture Increase with AI</label>
+            <span class="calc-val" id="val-conversion">15%</span>
+          </div>
+          <input type="range" id="slider-conversion" min="5" max="40" step="1" value="15">
+        </div>
+      </div>
+      
+      <!-- Display Result -->
+      <div class="calc-results">
+        <div class="result-title text-muted">Estimated Annual Revenue Recovered</div>
+        <div class="result-value" id="calc-revenue">$36,000</div>
+        <p class="result-note text-muted">Based on converting more casual website visitors into confirmed customers before they click away.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section-padding">
+    <div class="reveal">
+      <h2>Transparent, Flat-Rate Plans</h2>
+      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">Simple pricing built to scale with your business growth. No hidden setup fees.</p>
+    </div>
+    
+    <div class="pricing-grid">
+      <!-- Plan 1 -->
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <h3>Starter Website</h3>
+          <p class="desc">A fast, modern website to establish your business brand online.</p>
+          <div class="price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">149</span>
+            <span class="price-term">/mo</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="bi bi-check-lg"></i> Custom Modern Website</li>
+          <li><i class="bi bi-check-lg"></i> Mobile-Responsive Layout</li>
+          <li><i class="bi bi-check-lg"></i> Basic Contact & Lead Forms</li>
+          <li><i class="bi bi-check-lg"></i> Secure SSL & Fast Hosting</li>
+          <li><i class="bi bi-check-lg"></i> Monthly Content Updates</li>
+        </ul>
+        <button class="btn btn-secondary" onclick="openNeemChat('Starter Website')">Get Started</button>
+      </div>
+
+      <!-- Plan 2 (Featured) -->
+      <div class="pricing-card featured reveal" style="transition-delay: 0.1s;">
+        <span class="featured-tag">Most Popular</span>
+        <div class="pricing-header">
+          <h3>AI Growth Engine</h3>
+          <p class="desc">Our flagship package. A high-converting website integrated with custom AI.</p>
+          <div class="price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">299</span>
+            <span class="price-term">/mo</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="bi bi-check-lg"></i> Everything in Starter</li>
+          <li><i class="bi bi-check-lg"></i> <strong>Custom AI Assistant</strong></li>
+          <li><i class="bi bi-check-lg"></i> Trained on Business Rules & FAQs</li>
+          <li><i class="bi bi-check-lg"></i> Automated Appointment Booking</li>
+          <li><i class="bi bi-check-lg"></i> Instant SMS Lead Notifications</li>
+        </ul>
+        <button class="btn btn-primary" onclick="openNeemChat('AI Growth Engine')">Get Started</button>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="pricing-card reveal" style="transition-delay: 0.2s;">
+        <div class="pricing-header">
+          <h3>Local Authority</h3>
+          <p class="desc">For established service providers wanting advanced automation.</p>
+          <div class="price">
+            <span class="price-currency">$</span>
+            <span class="price-amount">499</span>
+            <span class="price-term">/mo</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="bi bi-check-lg"></i> Everything in Growth Engine</li>
+          <li><i class="bi bi-check-lg"></i> Multi-Platform AI (Web, SMS)</li>
+          <li><i class="bi bi-check-lg"></i> CRM & Calendar Syncing</li>
+          <li><i class="bi bi-check-lg"></i> Advanced SEO Optimization</li>
+          <li><i class="bi bi-check-lg"></i> Dedicated Account Manager</li>
+        </ul>
+        <button class="btn btn-secondary" onclick="openNeemChat('Local Authority')">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <i class="bi bi-leaf-fill logo-leaf"></i>
+          <span>Neem<span class="text-amber">Tech</span>AI</span>
+        </a>
+        <p>Empowering local service businesses with modern web design and intelligent conversational AI assistants.</p>
+      </div>
+      <div class="footer-links-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#hero">AI Assistants</a></li>
+          <li><a href="#hero">Web Design</a></li>
+          <li><a href="#roi-calculator">ROI Analytics</a></li>
+          <li><a href="#pricing">Monthly Hosting</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#logo-link">About Us</a></li>
+          <li><a href="#problem-solution">Why AI</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="javascript:void(0);" onclick="openNeemChat()">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:info@neemtechai.com"><i class="bi bi-envelope-fill"></i> info@neemtechai.com</a></li>
+          <li><a href="tel:5551234567"><i class="bi bi-telephone-fill"></i> (555) 123-4567</a></li>
+          <li><span class="text-muted"><i class="bi bi-geo-alt-fill"></i> San Francisco, CA</span></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div>&copy; 2026 Neem Tech AI. All rights reserved.</div>
+      <div>Designed for rapid loading & conversion.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Chatbot Widget (Idea C) -->
+  <div class="chatbot-widget" id="chatbot-widget">
+    <button class="chat-trigger" id="chat-trigger" aria-label="Open chat assistant">
+      <i class="bi bi-chat-dots-fill"></i>
+    </button>
+    
+    <div class="chat-panel" id="chat-panel">
+      <div class="panel-header">
+        <h4>
+          <span class="panel-status"></span>
+          <span>Neem AI Advisor</span>
+        </h4>
+        <button class="close-panel-btn" id="close-panel-btn" aria-label="Close chat">
+          <i class="bi bi-dash-lg"></i>
+        </button>
+      </div>
+      
+      <!-- Panel Chat feed -->
+      <div class="panel-body" id="panel-chat-body">
+        <!-- Populated dynamically by app.js -->
+      </div>
+      
+      <!-- Panel Input Area -->
+      <form class="panel-input-area" id="panel-input-form" onsubmit="event.preventDefault();">
+        <input type="text" class="panel-input" id="panel-input-field" placeholder="Ask about our services..." autocomplete="off">
+        <button type="submit" class="panel-send-btn" id="panel-send-btn" aria-label="Send message">
+          <i class="bi bi-send-fill"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
