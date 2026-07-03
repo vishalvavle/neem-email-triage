@@ -224,6 +224,7 @@ const panelInputField = document.getElementById('panel-input-field');
 let botInitialized = false;
 
 function initFloatingBot() {
+  if (!chatTrigger) return;
   chatTrigger.addEventListener('click', () => {
     chatPanel.classList.toggle('active');
     if (chatPanel.classList.contains('active')) {
@@ -234,57 +235,53 @@ function initFloatingBot() {
     }
   });
 
-  closePanelBtn.addEventListener('click', () => {
-    chatPanel.classList.remove('active');
-  });
+  if (closePanelBtn) {
+    closePanelBtn.addEventListener('click', () => {
+      chatPanel.classList.remove('active');
+    });
+  }
 
   // Handle panel message submissions
-  panelInputForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const userText = panelInputField.value.trim();
-    if (!userText) return;
+  if (panelInputForm) {
+    panelInputForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const userText = panelInputField.value.trim();
+      if (!userText) return;
 
-    // Send User Message
-    appendMessage(panelChatBody, 'user', userText);
-    panelInputField.value = '';
-    scrollToBottom(panelChatBody);
-
-    // Show Typing Indicator
-    const typingDiv = appendTypingIndicator(panelChatBody, 'Neem Advisor');
-    scrollToBottom(panelChatBody);
-
-    // Process Bot Response
-    setTimeout(() => {
-      typingDiv.remove();
-      const botResponse = getNeemAdvisorResponse(userText);
-      appendMessage(panelChatBody, 'bot', botResponse, 'Neem Advisor');
+      // Send User Message
+      appendMessage(panelChatBody, 'user', userText);
+      panelInputField.value = '';
       scrollToBottom(panelChatBody);
-    }, 1200);
-  });
+
+      // Show Typing Indicator
+      const typingDiv = appendTypingIndicator(panelChatBody, 'Neem Advisor');
+      scrollToBottom(panelChatBody);
+
+      // Process Bot Response
+      setTimeout(() => {
+        typingDiv.remove();
+        const botResponse = getNeemAdvisorResponse(userText);
+        appendMessage(panelChatBody, 'bot', botResponse, 'Neem Advisor');
+        scrollToBottom(panelChatBody);
+      }, 1200);
+    });
+  }
 }
 
 function initializeBotGreeting() {
   botInitialized = true;
-  panelChatBody.innerHTML = '';
-  appendMessage(panelChatBody, 'bot', "Hello! I am your Neem Tech AI advisor. Ask me anything about our custom websites, pricing plans, setup timelines, or how our AI assistants learn!", "Neem Advisor");
+  if (panelChatBody) {
+    panelChatBody.innerHTML = '';
+    appendMessage(panelChatBody, 'bot', "Hello! I am your Neem Tech AI advisor. Ask me anything about our custom websites, pricing plans, setup timelines, or how our AI assistants learn!", "Neem Advisor");
+  }
 }
 
 function openNeemChat(customInitialText = '') {
-  chatPanel.classList.add('active');
-  panelInputField.focus();
-  if (!botInitialized) {
-    initializeBotGreeting();
-  }
-  
+  const detail = {};
   if (customInitialText) {
-    // Send a message on behalf of user to kickstart transaction
-    setTimeout(() => {
-      panelInputField.value = `I'm interested in the ${customInitialText}!`;
-      // Trigger submission
-      const event = new Event('submit', { cancelable: true });
-      panelInputForm.dispatchEvent(event);
-    }, 300);
+    detail.message = `I'm interested in the ${customInitialText}!`;
   }
+  window.dispatchEvent(new CustomEvent('csa-open-widget', { detail }));
 }
 
 function getNeemAdvisorResponse(text) {
