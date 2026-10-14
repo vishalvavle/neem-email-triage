@@ -212,98 +212,26 @@ function scrollToBottom(windowElement) {
 }
 
 // ------------------------------------------
-// 4. FLOATING CHATBOT WIDGET LOGIC (IDEA C)
+// 4. ACTION HANDLERS (AUDIT / GET STARTED)
 // ------------------------------------------
-const chatTrigger = document.getElementById('chat-trigger');
-const chatPanel = document.getElementById('chat-panel');
-const closePanelBtn = document.getElementById('close-panel-btn');
-const panelChatBody = document.getElementById('panel-chat-body');
-const panelInputForm = document.getElementById('panel-input-form');
-const panelInputField = document.getElementById('panel-input-field');
-
-let botInitialized = false;
-
-function initFloatingBot() {
-  if (!chatTrigger) return;
-  chatTrigger.addEventListener('click', () => {
-    chatPanel.classList.toggle('active');
-    if (chatPanel.classList.contains('active')) {
-      panelInputField.focus();
-      if (!botInitialized) {
-        initializeBotGreeting();
-      }
-    }
-  });
-
-  if (closePanelBtn) {
-    closePanelBtn.addEventListener('click', () => {
-      chatPanel.classList.remove('active');
-    });
-  }
-
-  // Handle panel message submissions
-  if (panelInputForm) {
-    panelInputForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const userText = panelInputField.value.trim();
-      if (!userText) return;
-
-      // Send User Message
-      appendMessage(panelChatBody, 'user', userText);
-      panelInputField.value = '';
-      scrollToBottom(panelChatBody);
-
-      // Show Typing Indicator
-      const typingDiv = appendTypingIndicator(panelChatBody, 'Neem Advisor');
-      scrollToBottom(panelChatBody);
-
-      // Process Bot Response
-      setTimeout(() => {
-        typingDiv.remove();
-        const botResponse = getNeemAdvisorResponse(userText);
-        appendMessage(panelChatBody, 'bot', botResponse, 'Neem Advisor');
-        scrollToBottom(panelChatBody);
-      }, 1200);
-    });
-  }
-}
-
-function initializeBotGreeting() {
-  botInitialized = true;
-  if (panelChatBody) {
-    panelChatBody.innerHTML = '';
-    appendMessage(panelChatBody, 'bot', "Hello! I am your Neem Tech AI advisor. Ask me anything about our custom websites, pricing plans, setup timelines, or how our AI assistants learn!", "Neem Advisor");
-  }
-}
-
 function openNeemChat(customInitialText = '') {
-  const detail = {};
-  if (customInitialText) {
-    detail.message = `I'm interested in the ${customInitialText}!`;
+  const chatWidget = document.querySelector('chat-widget');
+  if (chatWidget) {
+    if (typeof chatWidget.openWidget === 'function') {
+      chatWidget.openWidget();
+      return;
+    }
+    const launcherBtn = chatWidget.shadowRoot
+      ? chatWidget.shadowRoot.querySelector('button, .chat-widget-button, [aria-label*="chat" i]')
+      : chatWidget.querySelector('button');
+    if (launcherBtn) {
+      launcherBtn.click();
+      return;
+    }
   }
-  window.dispatchEvent(new CustomEvent('csa-open-widget', { detail }));
-}
 
-function getNeemAdvisorResponse(text) {
-  const query = text.toLowerCase();
-  
-  if (query.includes('pricing') || query.includes('price') || query.includes('cost') || query.includes('plan')) {
-    return "Our plans are flat-rate: Starter Website is $149/mo, AI Growth Engine (includes custom AI Assistant) is $299/mo, and Local Authority is $499/mo. All packages come with fully managed hosting and updates!";
-  }
-  if (query.includes('time') || query.includes('long') || query.includes('days') || query.includes('setup')) {
-    return "We typically build and launch your custom website and AI assistant within 7 to 10 business days. We ingest all your FAQ files, pricing menus, or old websites so you don't have to code anything.";
-  }
-  if (query.includes('learn') || query.includes('train') || query.includes('data') || query.includes('how')) {
-    return "We train your assistant by uploading your documents, pdfs, schedules, and menus. The assistant is built using Gemini technology so it answers accurately without fabricating answers.";
-  }
-  if (query.includes('hello') || query.includes('hi') || query.includes('hey')) {
-    return "Hello! How can I help you today? I can answer questions about our pricing plans, design process, or help you schedule a free custom AI audit.";
-  }
-  if (query.includes('audit') || query.includes('call') || query.includes('book') || query.includes('contact') || query.includes('email') || query.includes('phone')) {
-    return "I'd love to help you book a Free AI Audit! What is your name and the best email or phone number to reach you? One of our engineers will follow up with you today.";
-  }
-  
-  return "That's a great question! Every local business is unique, and we tailor the AI to your exact services. Let's schedule a brief 10-minute chat. What is your email or phone number so we can coordinate?";
+  const subject = customInitialText ? `Inquiry: ${customInitialText}` : 'Free AI Audit Inquiry';
+  window.location.href = `mailto:info@neemtechai.com?subject=${encodeURIComponent(subject)}`;
 }
 
 // Expose openNeemChat globally so buttons can use it
@@ -381,7 +309,6 @@ function initScrollReveal() {
 // ------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
   initSimulator();
-  initFloatingBot();
   initROICalculator();
   initScrollReveal();
 
