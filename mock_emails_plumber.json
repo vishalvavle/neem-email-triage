@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "sender": "stressed.tenant@gmail.com",
+    "subject": "HELP: Active water leak in kitchen",
+    "body": "Hi Cascade team, there is water actively spraying from the pipe beneath our kitchen sink. I turned off the valve, but we have water on the floor. What are your emergency dispatch rates and how fast can someone get here?",
+    "timestamp": "2026-07-15T10:00:00Z",
+    "category": "Personal",
+    "priority": "important",
+    "draft_response": "Hi there,\n\nFirst, please take a deep breath\u2014you did an amazing job turning off that shut-off valve! That is exactly the right first step to prevent further damage, and you've handled it perfectly.\n\nSince you have an active leak, we want to help you get this resolved as quickly and stress-free as possible. Our 24/7 emergency dispatch service is available right now. We have an $85 flat call-out fee, plus parts and labor, and our technician will provide you with a clear, upfront estimate on site before starting any work.\n\nTo get a professional plumber dispatched to your home immediately, please call us directly at (555) 111-2222 so we can fast-track your dispatch. You can also instantly secure an urgent slot using our scheduling link: https://calendly.com/cascade-plumbing-scheduling\n\nHang in there, we've got you covered! We'll get your kitchen sorted out and dry in no time.\n\nWarmly,\n\nThe Cascade Plumbing Team\n(555) 111-2222\nservice@cascadeplumbing.com",
+    "status": "read"
+  },
+  {
+    "id": 2,
+    "sender": "marketing@webgrowth.com",
+    "subject": "Rank #1 on Google - Affordable local SEO services for plumbers!",
+    "body": "Verify your Google listing and double your service bookings with our advanced local SEO solutions. Blowout sale starting this weekly period.",
+    "timestamp": "2026-07-15T09:15:00Z",
+    "category": "Spam",
+    "priority": "unimportant",
+    "draft_response": "",
+    "status": "archived"
+  },
+  {
+    "id": 3,
+    "sender": "customer.jones@gmail.com",
+    "subject": "Requesting quote for tankless water heater",
+    "body": "Hello, I am interested in upgrading our traditional water heater tank to a modern tankless one. Do you install them in San Mateo, and can I schedule an appointment for a free quote?",
+    "timestamp": "2026-07-15T08:00:00Z",
+    "category": "Personal",
+    "priority": "important",
+    "draft_response": "Hi Jones,\n\nThank you so much for reaching out to us at Cascade Plumbing! Upgrading to a modern, energy-efficient tankless water heater is a fantastic investment that will provide you with endless hot water and save you money on your energy bills over the long run.\n\nI have great news: yes, we absolutely service San Mateo and the surrounding Peninsula!\n\nOur modern tankless water heater installations start at $2,200, and we would love to help you get started with a completely free, no-obligation on-site quote. This allows our technician to inspect your current setup and provide you with a highly accurate, custom estimate.\n\nYou can easily schedule your free premium quote appointment using our online booking link: https://calendly.com/cascade-plumbing-scheduling\n\nIf you have any questions or prefer to arrange this over the phone, please don't hesitate to give us a call at (555) 111-2222. We look forward to helping you with your water heater upgrade!\n\nWarmly,\n\nThe Cascade Plumbing Team\n(555) 111-2222\nservice@cascadeplumbing.com",
+    "status": "read"
+  }
+]

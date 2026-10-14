@@ -1,6 +1,21 @@
-# wrangler files
+# Python Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Wrangler and Cloudflare
 .wrangler
 .dev.vars*
 !.dev.vars.example
 .env*
 !.env.example
+
+# System Files
+.DS_Store
+Thumbs.db

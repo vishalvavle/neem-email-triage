@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "sender": "pain.patient@gmail.com",
+    "subject": "Urgent: Severe toothache emergency question",
+    "body": "Hello BrightSmile, I woke up with throbbing molar pain on the left side and a swollen cheek. Do you have any emergency slots open today? Also, can you confirm if you accept Delta Dental PPO?",
+    "timestamp": "2026-07-15T11:00:00Z",
+    "category": "Personal",
+    "priority": "important",
+    "draft_response": "Dear Patient,\n\nThank you for reaching out to BrightSmile Dental. I am so sorry to hear that you are experiencing severe toothache and swelling. Please know that we are here to support you, and we always hold emergency slots open daily to help relieve our patients from severe dental pain as quickly as possible.\n\nTo address your questions:\n1. **Emergency Service**: Our Emergency Examination has a standard $45 exam fee, and we can prioritize seeing you today.\n2. **Insurance**: We are pleased to confirm that we accept major dental PPO plans, including Delta Dental PPO. We will gladly help process your claim.\n\nPlease use our online portal to find an open emergency slot immediately:\nhttps://brightsmile-dental.com/book-appointment\n\nAlternatively, because you are dealing with severe pain and swelling, we highly recommend calling our office directly at (555) 333-4444 so a member of our compassionate team can get you scheduled for an immediate slot today.\n\nYour comfort is our top priority. We look forward to helping you feel better soon.\n\nWarmest regards,\n\nBrightSmile Dental Team\n101 Medical Center Way, Suite 400\nSan Francisco, CA 94102\n(555) 333-4444\ninfo@brightsmiledental.com",
+    "status": "read"
+  },
+  {
+    "id": 2,
+    "sender": "supply-sales@glovesdirect.com",
+    "subject": "Summer pricing: Wholesale nitrile gloves catalog inside",
+    "body": "Medical-grade nitrile gloves box discount catalog. Fast shipping, order payment forms enclosed. Click to unsubscribe from marketing.",
+    "timestamp": "2026-07-15T07:30:00Z",
+    "category": "Promo",
+    "priority": "unimportant",
+    "draft_response": "",
+    "status": "archived"
+  },
+  {
+    "id": 3,
+    "sender": "prospective.patient@yahoo.com",
+    "subject": "Query about $79 New Patient Special",
+    "body": "Hi there! I saw your flyer for the $79 new patient special (cleaning, exam, X-rays). I'd like to schedule this for next Wednesday morning. Is this special rate active, and how should I book?",
+    "timestamp": "2026-07-15T09:45:00Z",
+    "category": "Personal",
+    "priority": "normal",
+    "draft_response": "Dear Prospective Patient,\n\nThank you for contacting BrightSmile Dental! We are absolutely delighted by your interest in our clinic.\n\nYes, we are pleased to confirm that our **$79 New Patient Special** is fully active! This comprehensive flat package includes:\n- A gentle, professional dental cleaning\n- A thorough examination by our dentist\n- Full digital X-rays\n\nWe would love to welcome you next Wednesday morning! To facilitate booking, you can easily view available time slots and secure your appointment directly through our online scheduling portal:\nhttps://brightsmile-dental.com/book-appointment\n\nShould you have any questions or prefer to book over the phone, please feel free to call our warm and friendly team at (555) 333-4444. We are open Mon-Thu 7 AM - 4 PM, and Fri 8 AM - 1 PM.\n\nWe look forward to meeting you and helping you keep your smile bright and healthy!\n\nWarmest regards,\n\nBrightSmile Dental Team\n101 Medical Center Way, Suite 400\nSan Francisco, CA 94102\n(555) 333-4444\ninfo@brightsmiledental.com",
+    "status": "read"
+  }
+]
