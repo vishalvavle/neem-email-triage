@@ -44,7 +44,7 @@ const simulatorData = {
       },
       {
         question: "Can I book a new patient exam and cleaning special?",
-        response: "Absolutely! Our new patient comprehensive package includes full digital low-radiation X-rays, periodontal health screening, and dental cleaning for $89. We have open appointments Friday morning at 9:00 AM or 11:30 AM."
+        response: "Absolutely! Our new patient comprehensive package includes full digital low-radiation X-rays, periodontal health screening, and dental cleaning. We have open appointments Friday morning at 9:00 AM or 11:30 AM."
       }
     ]
   },
