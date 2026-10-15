@@ -1,5 +1,5 @@
 /* ==========================================
-   NEEM TECH AI - CLINICAL & PRACTICE INTELLIGENCE LOGIC
+   NEEMTECHAI - CLINICAL & PRACTICE INTELLIGENCE LOGIC
    ========================================== */
 
 // ------------------------------------------

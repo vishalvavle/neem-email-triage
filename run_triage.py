@@ -104,7 +104,7 @@ def initialize_mock_database(client_id: str):
 # ==========================================
 
 async def main():
-    parser = argparse.ArgumentParser(description="Neem Tech AI Email Triage CLI")
+    parser = argparse.ArgumentParser(description="NeemTechAI Email Triage CLI")
     parser.add_argument(
         "--client", 
         required=True, 
@@ -119,7 +119,7 @@ async def main():
         # Load profile configurations
         profile = load_client_profile(client_id)
         print(f"\n==========================================\n"
-              f"  NEEM TECH AI EMAIL TRIAGE: {profile['client_name']}\n"
+              f"  NEEMTECHAI EMAIL TRIAGE: {profile['client_name']}\n"
               f"==========================================")
         
         # Setup clean seed database
