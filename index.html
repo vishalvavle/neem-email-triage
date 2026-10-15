@@ -45,8 +45,8 @@
 
   <!-- Official Brand Favicons & App Icons -->
   <link rel="icon" href="/favicon-mark.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/brand/png/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/brand/png/app-icon-180.png">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -207,6 +207,7 @@
   <section id="hero" class="section-padding">
     <div class="hero-content reveal">
       <div class="pill-badge">
+        <img src="brand/mark-simple.svg" alt="" class="pill-brand-icon">
         <span class="pulse-indicator"></span>
         <span>100% HIPAA Compliant • 42 CFR Part 2 • BAA Ready</span>
       </div>
@@ -257,6 +258,10 @@
 
         <div class="phone-screen">
           <div class="simulator-header">
+            <div class="simulator-branding-bar">
+              <img src="brand/mark-simple.svg" alt="" width="14" height="14">
+              <span>Neem AI Clinical Employee</span>
+            </div>
             <!-- Compliance Live Status Pill -->
             <div class="simulator-compliance-bar" id="simulator-compliance-status">
               🔒 HIPAA Protocol Active • 42 CFR Part 2 Ready
@@ -413,6 +418,10 @@
 
       <!-- Security Status Dashboard Mockup -->
       <div class="security-badge-visual">
+        <div class="sec-dashboard-header">
+          <img src="brand/mark-simple.svg" alt="Neem" width="20" height="20">
+          <span>Neem Clinical Security Engine</span>
+        </div>
         <div class="sec-cert-row">
           <div class="cert-name">
             <i class="bi bi-shield-fill-check text-emerald"></i>
@@ -490,7 +499,10 @@
 
       <!-- The Neem Way -->
       <div class="comparison-card positive reveal" style="transition-delay: 0.1s;">
-        <span class="card-tag">The Neem Tech AI Way</span>
+        <span class="card-tag">
+          <img src="brand/mark-simple.svg" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">
+          The Neem Tech AI Way
+        </span>
         <h3>24/7 Compliant Practice Expansion</h3>
         <ul class="comparison-list">
           <li>
@@ -739,6 +751,36 @@
           <p>Our turnkey deployment typically takes 5 to 7 business days. Our engineers ingest your practice FAQs and provider schedules, execute your custom BAA, configure your crisis guardrails, and conduct extensive simulated testing before connecting your practice phone, SMS, and website channels.</p>
         </div>
       </details>
+    </div>
+  </section>
+
+  <!-- High-Impact Clinical Practice Audit & BAA CTA Banner -->
+  <section class="cta-banner-section section-padding">
+    <div class="cta-banner-card reveal">
+      <div class="cta-banner-watermark">
+        <img src="brand/mark-detail.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="cta-banner-content">
+        <div class="pill-badge">
+          <img src="brand/mark-simple.svg" alt="" class="pill-brand-icon">
+          <span>Turnkey Practice Onboarding</span>
+        </div>
+        <h2>Deploy Your Dedicated 24/7 HIPAA AI Chat Employee in 5 Days.</h2>
+        <p>Eliminate missed patient inquiries, reduce front-desk telephone burnout, and ensure 100% HIPAA and 42 CFR Part 2 compliance under a signed BAA.</p>
+        <div class="cta-btn-group">
+          <button class="btn btn-primary" onclick="openNeemChat('Schedule 15-Min Clinical Workflow Audit')">
+            <i class="bi bi-calendar2-check"></i> Book 15-Min Practice Audit
+          </button>
+          <a href="tel:9253307362" class="btn btn-secondary">
+            <i class="bi bi-telephone-fill"></i> Call (925) 330-7362
+          </a>
+        </div>
+        <div class="cta-guarantees">
+          <span><i class="bi bi-shield-check text-emerald"></i> Signed BAA Included</span>
+          <span><i class="bi bi-check-circle-fill text-emerald"></i> 0s Patient Wait Times</span>
+          <span><i class="bi bi-lock-fill text-emerald"></i> AES-256 ePHI Protection</span>
+        </div>
+      </div>
     </div>
   </section>
 

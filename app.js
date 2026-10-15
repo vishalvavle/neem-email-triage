@@ -182,8 +182,7 @@ function appendMessage(targetWindow, sender, text, name = '', badgeTheme = '') {
   if (sender === 'bot') {
     const profile = document.createElement('div');
     profile.className = `bot-profile ${badgeTheme === 'psych' ? 'psych' : ''}`;
-    const icon = badgeTheme === 'psych' ? 'bi-shield-heart-fill' : 'bi-shield-check';
-    profile.innerHTML = `<i class="bi ${icon}"></i> <span>${name}</span>`;
+    profile.innerHTML = `<img src="brand/mark-simple.svg" class="bot-avatar-brand" alt="Neem"> <span>${name}</span>`;
     msg.appendChild(profile);
   }
 
@@ -201,7 +200,7 @@ function appendTypingIndicator(targetWindow, name = '') {
 
   const profile = document.createElement('div');
   profile.className = 'bot-profile';
-  profile.innerHTML = `<i class="bi bi-shield-check"></i> <span>${name} is preparing response...</span>`;
+  profile.innerHTML = `<img src="brand/mark-simple.svg" class="bot-avatar-brand" alt="Neem"> <span>${name} is preparing response...</span>`;
   msg.appendChild(profile);
 
   const indicator = document.createElement('div');
