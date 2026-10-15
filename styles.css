@@ -1315,6 +1315,91 @@ input[type=range]::-webkit-slider-thumb:hover {
 }
 
 /* ==========================================
+   CLINICAL FAQ ACCORDION (SEO OPTIMIZED)
+   ========================================== */
+.faq-section {
+  background: #FFFFFF;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.faq-container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--bg-page);
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.faq-item:hover {
+  border-color: #CBD5E1;
+  background: #FFFFFF;
+  box-shadow: var(--card-shadow);
+}
+
+.faq-item[open] {
+  background: #FFFFFF;
+  border-color: var(--primary-emerald-border);
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.08);
+}
+
+.faq-question {
+  padding: 1.35rem 1.75rem;
+  font-family: var(--font-header);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-chevron {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--bg-surface-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-emerald);
+  font-size: 0.9rem;
+  transition: transform 0.25s ease, background 0.25s ease;
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+  background: var(--primary-emerald-soft);
+}
+
+.faq-answer {
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.faq-answer p + p {
+  margin-top: 0.75rem;
+}
+
+/* ==========================================
    FOOTER
    ========================================== */
 footer {
