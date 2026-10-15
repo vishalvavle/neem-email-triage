@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 /* ==========================================
    NEEM TECH AI - LUMINOUS CLINICAL DESIGN SYSTEM
    Modern, Light, Pristine Healthcare & Medical Aesthetics
-   Crisp White, Clinical Slate, Medical Emerald & Psychiatric Violet
+   Official Brand Identity: Neem Green #0D5C35, Ink #111111, Manrope Typeface
    ========================================== */
 :root {
+  /* Official Brand Colors */
+  --brand-green: #0D5C35;
+  --brand-green-on-dark: #4EA87A;
+  --ink: #111111;
+
   /* Crisp Light Backgrounds */
   --bg-page: #F8FAFC;
   --bg-surface: #FFFFFF;
@@ -14,13 +19,13 @@
   --bg-card: #FFFFFF;
   --bg-card-hover: #FFFFFF;
   
-  /* Clinical Accents & Tones */
-  --primary-emerald: #059669;
-  --primary-emerald-hover: #047857;
-  --primary-emerald-glow: rgba(5, 150, 105, 0.15);
-  --primary-emerald-soft: #ECFDF5;
-  --primary-emerald-border: #A7F3D0;
-  --primary-emerald-dark: #064E3B;
+  /* Clinical Accents & Tones (Aligned to Brand Green #0D5C35) */
+  --primary-emerald: #0D5C35;
+  --primary-emerald-hover: #083D23;
+  --primary-emerald-glow: rgba(13, 92, 53, 0.18);
+  --primary-emerald-soft: #EDF7F1;
+  --primary-emerald-border: #B2D8C3;
+  --primary-emerald-dark: #062E1A;
 
   --accent-cyan: #0284C7;
   --accent-cyan-soft: #F0F9FF;
@@ -43,19 +48,19 @@
   /* Borders & Shadows */
   --border-subtle: #E2E8F0;
   --border-card: #E2E8F0;
-  --border-emerald: #A7F3D0;
+  --border-emerald: #B2D8C3;
   --border-cyan: #BAE6FD;
   --border-purple: #DDD6FE;
-  --border-hover: #059669;
+  --border-hover: #0D5C35;
   
   /* Soft Elevated Shadows */
   --card-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
   --card-shadow-hover: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
   --glass-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
-  --glow-shadow: 0 10px 30px -5px rgba(5, 150, 105, 0.18);
+  --glow-shadow: 0 10px 30px -5px rgba(13, 92, 53, 0.2);
 
-  /* Fonts */
-  --font-header: 'Plus Jakarta Sans', 'Space Grotesk', -apple-system, sans-serif;
+  /* Fonts (Official Brand Font: Manrope ExtraBold 800) */
+  --font-header: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'Space Grotesk', monospace;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -357,11 +362,17 @@ header {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: var(--font-header);
-  font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: -0.03em;
-  color: var(--text-main);
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.88;
+}
+
+.logo-brand-img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .logo-icon-wrap {
@@ -374,7 +385,7 @@ header {
   align-items: center;
   justify-content: center;
   color: var(--primary-emerald);
-  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.12);
+  box-shadow: 0 2px 6px rgba(13, 92, 53, 0.12);
 }
 
 nav ul {
