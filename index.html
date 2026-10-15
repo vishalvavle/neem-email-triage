@@ -4,66 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <title>Modern Websites & Custom AI Assistants for Local Businesses | Neem Tech AI</title>
+  <title>Neem Tech AI | HIPAA-Compliant AI Chat Employees for Medical, Psychiatric & Healthcare Practices</title>
   <meta name="description"
-    content="We build high-converting websites and train intelligent AI assistants that learn your business, answer customer questions 24/7, and book appointments automatically.">
+    content="Deploy autonomous, HIPAA-compliant AI chat employees for psychiatric centers, dental groups, and medical clinics. 24/7 confidential patient intake, crisis guardrails, and automated booking with signed BAAs.">
 
-  <!-- Bootstrap Icons CDN -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%2310B981'/><path d='M10 16l4 4 8-8' stroke='%2305080E' stroke-width='2.5' fill='none' stroke-linecap='round'/></svg>">
+
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- Custom Stylesheet -->
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <!-- Ambient Background Lighting & Grid -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="bg-ambient-grid"></div>
+    <div class="bg-ambient-orb orb-emerald"></div>
+    <div class="bg-ambient-orb orb-cyan"></div>
+    <div class="bg-ambient-orb orb-purple"></div>
+  </div>
 
-  <!-- Background visual effects -->
-  <div class="bg-grid"></div>
-  <div class="bg-radial"></div>
-
-  <!-- Header Navigation -->
+  <!-- Header / Navigation -->
   <header>
     <div class="nav-container">
-      <a href="#" class="logo" id="logo-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="logo-leaf" width="28" height="28"
-          style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; margin-right: 4px;">
-          <!-- Left Leg (Tech Grid / Nodes) -->
-          <line x1="8" y1="26" x2="8" y2="8" stroke="var(--text-main)" stroke-width="2.5" />
-          <circle cx="8" cy="8" r="1.5" fill="var(--text-main)" stroke="none" />
-          <circle cx="8" cy="17" r="1.5" fill="var(--text-main)" stroke="none" />
-          <circle cx="8" cy="26" r="1.5" fill="var(--text-main)" stroke="none" />
-          <path d="M8 12h3.5" stroke="var(--text-main)" stroke-width="1.5" />
-          <circle cx="11.5" cy="12" r="1" fill="var(--text-main)" stroke="none" />
-          <path d="M8 20h3.5" stroke="var(--text-main)" stroke-width="1.5" />
-          <circle cx="11.5" cy="20" r="1" fill="var(--text-main)" stroke="none" />
-          <!-- Diagonal Connector -->
-          <line x1="8" y1="8" x2="22" y2="24" stroke="var(--text-main)" stroke-width="2.5" />
-          <!-- Right Leg / Neem Leaf -->
-          <line x1="22" y1="26" x2="22" y2="12" stroke="var(--primary-glow)" stroke-width="2.5" />
-          <!-- Leaf shape -->
-          <path d="M22 12 C26 9, 27 6, 22 2 C17 6, 18 9, 22 12 Z" fill="rgba(217, 119, 6, 0.15)"
-            stroke="var(--primary-glow)" stroke-width="2" />
-          <!-- Leaf vein -->
-          <line x1="22" y1="10" x2="22" y2="4" stroke="var(--primary-glow)" stroke-width="1.5" />
-        </svg>
-        <span>Neem<span class="text-amber">Tech</span>AI</span>
+      <a href="#" class="logo">
+        <div class="logo-icon-wrap">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <span>Neem<span class="text-emerald">Tech</span>AI</span>
       </a>
+
       <nav>
         <ul>
           <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#problem-solution" class="nav-link">Why AI</a></li>
+          <li><a href="#specialties" class="nav-link">Specialties</a></li>
+          <li><a href="#security" class="nav-link">HIPAA & Security</a></li>
           <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-          <li><a href="#roi-calculator" class="nav-link">ROI Calculator</a></li>
-          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#roi-calculator" class="nav-link">Practice Impact</a></li>
+          <li><a href="#deployments" class="nav-link">Solutions</a></li>
         </ul>
       </nav>
+
       <div class="nav-actions">
-        <a href="#pricing" class="btn btn-secondary btn-sm" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">View
-          Plans</a>
-        <a href="mailto:info@neemtechai.com?subject=Free%20AI%20Audit%20Inquiry" class="btn btn-primary btn-sm"
-          style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">Free Audit</a>
+        <a href="javascript:void(0);" onclick="openNeemChat('Clinical AI Audit & Demo')" class="btn btn-primary btn-sm">
+          <i class="bi bi-calendar2-check"></i> Book Practice Audit
+        </a>
       </div>
     </div>
   </header>
@@ -71,51 +60,251 @@
   <!-- Hero Section -->
   <section id="hero" class="section-padding">
     <div class="hero-content reveal">
-      <div class="hero-badge">Next-Gen Local Commerce</div>
-      <h1>Modern Websites & <span class="text-amber">Custom AI Assistants</span> for Local Businesses.</h1>
-      <p>We build high-converting websites and train intelligent AI assistants that learn your business details, answer
-        customer questions 24/7, and book appointments automatically.</p>
+      <div class="pill-badge">
+        <span class="pulse-indicator"></span>
+        <span>100% HIPAA Compliant • 42 CFR Part 2 • BAA Ready</span>
+      </div>
+
+      <h1>Autonomous <span class="text-gradient-emerald">AI Chat Employees</span> for Medical & Psychiatric Practices.</h1>
+      
+      <p>Deploy dedicated digital staff that triage inquiries, conduct compassionate confidential patient intake, and schedule appointments 24/7. Zero wait times. Military-grade ePHI protection with signed BAAs.</p>
+
       <div class="hero-actions">
-        <a href="#pricing" class="btn btn-primary">
-          <span>Get Started</span>
+        <a href="#deployments" class="btn btn-primary">
+          <span>Explore Practice Solutions</span>
           <i class="bi bi-arrow-right"></i>
         </a>
-        <a href="#roi-calculator" class="btn btn-secondary">Calculate ROI</a>
+        <a href="#security" class="btn btn-secondary">
+          <i class="bi bi-shield-lock-fill text-emerald"></i>
+          <span>Security Architecture</span>
+        </a>
+      </div>
+
+      <!-- Trust Metrics -->
+      <div class="hero-trust-metrics">
+        <div class="metric-item">
+          <span class="metric-num text-emerald">0s</span>
+          <span class="metric-label">Patient Wait Time</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num text-cyan">100%</span>
+          <span class="metric-label">BAA Guaranteed</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num text-purple">24/7</span>
+          <span class="metric-label">Confidential Care</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-num">99.4%</span>
+          <span class="metric-label">Intake Accuracy</span>
+        </div>
       </div>
     </div>
 
-    <!-- Phone Mockup AI Chat Simulator (Idea A) -->
+    <!-- Phone Mockup Interactive Clinical Simulator -->
     <div class="hero-visual reveal" style="transition-delay: 0.2s;">
       <div class="phone-mockup">
         <div class="phone-notch">
           <div class="phone-camera"></div>
           <div class="phone-speaker"></div>
         </div>
+
         <div class="phone-screen">
-
           <div class="simulator-header">
+            <!-- Compliance Live Status Pill -->
+            <div class="simulator-compliance-bar" id="simulator-compliance-status">
+              🔒 HIPAA Protocol Active • 42 CFR Part 2 Ready
+            </div>
+
             <div class="industry-tabs" id="industry-tabs">
-              <button class="tab-btn active" data-industry="plumber">🪠 Plumber</button>
-              <button class="tab-btn" data-industry="dentist">🦷 Dentist</button>
-              <button class="tab-btn" data-industry="salon">💇‍♀️ Salon</button>
-              <button class="tab-btn" data-industry="lawyer">⚖️ Law Firm</button>
+              <button class="tab-btn active psych" data-industry="psychiatry">🧠 Psychiatric</button>
+              <button class="tab-btn" data-industry="dentist">🦷 Dental</button>
+              <button class="tab-btn" data-industry="medical">🩺 Medical</button>
+              <button class="tab-btn" data-industry="contractor">⚡ Commercial</button>
             </div>
           </div>
 
-          <!-- Message Feed -->
+          <!-- Chat Window -->
           <div class="chat-window" id="simulator-chat">
-            <!-- Populated dynamically by app.js -->
+            <!-- Dynamically populated by app.js -->
           </div>
 
-          <!-- Suggested Prompts -->
+          <!-- Suggested Testing Prompts -->
           <div class="prompts-container">
-            <div class="prompt-tip">Tap a question to test the AI response:</div>
-            <div class="prompts-list" id="simulator-prompts"
-              style="display: flex; flex-direction: column; gap: 0.4rem;">
-              <!-- Populated dynamically by app.js -->
+            <div class="prompt-tip">Tap a test inquiry to see the clinical response:</div>
+            <div class="prompts-list" id="simulator-prompts" style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <!-- Dynamically populated by app.js -->
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Regulatory Trust & Verification Banner -->
+  <div class="trust-banner">
+    <div class="trust-banner-inner">
+      <div class="trust-title">Built for Strict Clinical Privacy, Regulatory Compliance & Patient Trust</div>
+      <div class="trust-badges-grid">
+        <div class="trust-badge-item">
+          <i class="bi bi-shield-check"></i>
+          <span>HIPAA Security Rule</span>
+        </div>
+        <div class="trust-badge-item">
+          <i class="bi bi-file-earmark-lock-fill"></i>
+          <span>42 CFR Part 2 Ready</span>
+        </div>
+        <div class="trust-badge-item">
+          <i class="bi bi-file-text-fill"></i>
+          <span>Signed BAA Included</span>
+        </div>
+        <div class="trust-badge-item">
+          <i class="bi bi-cpu-fill"></i>
+          <span>Zero-Retention Private LLM</span>
+        </div>
+        <div class="trust-badge-item">
+          <i class="bi bi-lock-fill"></i>
+          <span>AES-256 Bit Encryption</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clinical Specialties Section -->
+  <section id="specialties" class="section-padding">
+    <div class="section-header reveal">
+      <div class="pill-badge purple">Specialized Clinical AI Workforce</div>
+      <h2>Engineered for High-Stakes Patient & Practice Communications</h2>
+      <p>Generic bots expose clinics to severe liability. Neem Tech AI chat employees are programmed with medical guardrails, clinical intake questions, and empathy.</p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Feature 1: Psychiatric & Behavioral Health -->
+      <div class="feature-card highlight-purple reveal">
+        <div class="feature-icon purple">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <span class="feature-tag purple">Psychiatric & Mental Health</span>
+        <h3>Confidential Intake & Evaluation Booking</h3>
+        <p>Patients seeking mental health support often browse late at night. Our AI conducts private, compassionate screening for ADHD, anxiety, depression, and therapy, pre-qualifying inquiries without judgment.</p>
+        <div class="crisis-callout">
+          <i class="bi bi-exclamation-triangle-fill"></i> Hardcoded 988 Suicide & Crisis Lifeline detection & immediate escalation.
+        </div>
+      </div>
+
+      <!-- Feature 2: Dental & Oral Surgery -->
+      <div class="feature-card reveal" style="transition-delay: 0.1s;">
+        <div class="feature-icon">
+          <i class="bi bi-hospital"></i>
+        </div>
+        <span class="feature-tag">Dental & Oral Surgery</span>
+        <h3>Emergency Toothache & Insurance Triage</h3>
+        <p>Triage severe pain, broken teeth, and cosmetic questions in under 3 seconds. Pre-verifies PPO dental insurance benefits and books appointments directly into your practice management schedule.</p>
+      </div>
+
+      <!-- Feature 3: Specialty & Family Medicine -->
+      <div class="feature-card reveal" style="transition-delay: 0.2s;">
+        <div class="feature-icon cyan">
+          <i class="bi bi-clipboard2-pulse-fill"></i>
+        </div>
+        <span class="feature-tag">Medical & Specialty Care</span>
+        <h3>Intake, Telehealth & Prescription Routing</h3>
+        <p>Guides new patients through registration, directs urgent symptoms to on-call clinical lines, and books routine visits. Cuts phone volume by up to 65% for busy front desk coordinators.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Architecture Section -->
+  <section id="security" class="section-padding security-section">
+    <div class="section-header reveal">
+      <div class="pill-badge">Zero Compromise on ePHI</div>
+      <h2>Enterprise Health Security & HIPAA Architecture</h2>
+      <p>How we ensure complete regulatory compliance, patient confidentiality, and legal indemnification for covered entities and providers.</p>
+    </div>
+
+    <div class="security-box reveal">
+      <div class="security-pillars">
+        <div class="pillar-item">
+          <div class="pillar-icon">
+            <i class="bi bi-pen-fill"></i>
+          </div>
+          <div class="pillar-content">
+            <h4>Signed Business Associate Agreement (BAA)</h4>
+            <p>We execute standard or custom BAAs for every medical, dental, and psychiatric practice before deployment, fully defining administrative, physical, and technical safeguards.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item">
+          <div class="pillar-icon">
+            <i class="bi bi-slash-circle-fill"></i>
+          </div>
+          <div class="pillar-content">
+            <h4>Zero-Retention Private Model Sandbox</h4>
+            <p>Patient transcripts and identifiers are never used to train foundational AI models. Conversations remain completely isolated within your practice's encrypted sandbox.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item">
+          <div class="pillar-icon">
+            <i class="bi bi-eye-slash-fill"></i>
+          </div>
+          <div class="pillar-content">
+            <h4>Automated ePHI Sanitization & Entity Masking</h4>
+            <p>Our pipeline identifies and masks Social Security Numbers, Medical Record Numbers, and sensitive diagnostic codes before inference, safeguarding patient privacy.</p>
+          </div>
+        </div>
+
+        <div class="pillar-item">
+          <div class="pillar-icon">
+            <i class="bi bi-journal-check"></i>
+          </div>
+          <div class="pillar-content">
+            <h4>Tamper-Evident Audit Trails & Access Control</h4>
+            <p>All administrative access is gated via strict role-based multi-factor authentication with full access logs for routine HIPAA compliance audits.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Security Status Dashboard Mockup -->
+      <div class="security-badge-visual">
+        <div class="sec-cert-row">
+          <div class="cert-name">
+            <i class="bi bi-shield-fill-check text-emerald"></i>
+            <span>HIPAA Security Rule</span>
+          </div>
+          <span class="cert-status">Enforced</span>
+        </div>
+
+        <div class="sec-cert-row">
+          <div class="cert-name">
+            <i class="bi bi-heart-pulse-fill text-purple"></i>
+            <span>42 CFR Part 2 (Behavioral)</span>
+          </div>
+          <span class="cert-status">Compliant</span>
+        </div>
+
+        <div class="sec-cert-row">
+          <div class="cert-name">
+            <i class="bi bi-lock-fill text-cyan"></i>
+            <span>TLS 1.3 / AES-256 Encryption</span>
+          </div>
+          <span class="cert-status">Active</span>
+        </div>
+
+        <div class="sec-cert-row">
+          <div class="cert-name">
+            <i class="bi bi-clipboard-check-fill text-emerald"></i>
+            <span>Business Associate Agreement</span>
+          </div>
+          <span class="cert-status">Executed</span>
+        </div>
+
+        <div class="sec-cert-row">
+          <div class="cert-name">
+            <i class="bi bi-telephone-plus-fill text-emerald"></i>
+            <span>988 Crisis Detection Protocol</span>
+          </div>
+          <span class="cert-status">Active</span>
         </div>
       </div>
     </div>
@@ -123,64 +312,56 @@
 
   <!-- Problem vs Solution Section -->
   <section id="problem-solution" class="section-padding">
-    <div class="reveal">
-      <h2>Transforming How Local Businesses Convert Leads</h2>
-      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">Customers expect instant replies. If
-        you take 30 minutes to answer, they have already called your competitor.</p>
+    <div class="section-header reveal">
+      <h2>Transforming How Healthcare Practices Engage Patients</h2>
+      <p>Patients seeking care expect immediate, empathetic responses. If a clinic takes hours to return a voicemail, patients turn to other providers.</p>
     </div>
 
     <div class="comparison-grid">
-      <!-- The Old Way -->
+      <!-- The Legacy Way -->
       <div class="comparison-card negative reveal">
-        <span class="card-tag">The Old Way</span>
-        <h3>Losing Leads Daily</h3>
+        <span class="card-tag">The Legacy Clinic Way</span>
+        <h3>Lost Patients & Overworked Staff</h3>
         <ul class="comparison-list">
           <li>
             <i class="bi bi-x-circle-fill"></i>
-            <span><strong>Delayed email response:</strong> Customers wait hours for pricing quotes and look
-              elsewhere.</span>
+            <span><strong>Missed late-night inquiries:</strong> Over 40% of psychiatric and dental inquiries arrive after-hours when staff are gone.</span>
           </li>
           <li>
             <i class="bi bi-x-circle-fill"></i>
-            <span><strong>Missed calls:</strong> You are busy doing work, so phone calls go straight to
-              voicemail.</span>
+            <span><strong>Front desk phone bottleneck:</strong> Staff spent hours answering repetitive insurance, parking, and fee questions instead of caring for patients.</span>
           </li>
           <li>
             <i class="bi bi-x-circle-fill"></i>
-            <span><strong>Outdated websites:</strong> Static pages that don't load well on mobile and fail to capture
-              leads.</span>
+            <span><strong>Static intake forms:</strong> Long, cold PDF downloads or generic web forms that patients abandon before completing.</span>
           </li>
           <li>
             <i class="bi bi-x-circle-fill"></i>
-            <span><strong>High support burden:</strong> Spending hours answering the same simple scheduling
-              questions.</span>
+            <span><strong>Compliance risk with unvetted bots:</strong> Commercial chatbots without signed BAAs expose clinics to catastrophic HIPAA violations.</span>
           </li>
         </ul>
       </div>
 
       <!-- The Neem Way -->
       <div class="comparison-card positive reveal" style="transition-delay: 0.1s;">
-        <span class="card-tag">The Neem Way</span>
-        <h3>24/7 Autopilot Growth</h3>
+        <span class="card-tag">The Neem Tech AI Way</span>
+        <h3>24/7 Compliant Practice Expansion</h3>
         <ul class="comparison-list">
           <li>
             <i class="bi bi-check-circle-fill"></i>
-            <span><strong>Under 3-second responses:</strong> AI instantly replies to custom website questions.</span>
+            <span><strong>Instant 2-second compassionate intake:</strong> Patients receive immediate validation, guidance, and intake scheduling at any hour.</span>
           </li>
           <li>
             <i class="bi bi-check-circle-fill"></i>
-            <span><strong>No missed opportunities:</strong> Every website visitor is engaged immediately to capture
-              contact info.</span>
+            <span><strong>Full legal protection:</strong> Signed BAA and clinical safety guardrails protect provider licenses and practice credentials.</span>
           </li>
           <li>
             <i class="bi bi-check-circle-fill"></i>
-            <span><strong>Ultra-fast websites:</strong> High-performance, modern, mobile-friendly design built for
-              speed.</span>
+            <span><strong>Direct EHR & calendar integration:</strong> Converted appointments sync cleanly into clinical calendars with automated SMS reminders.</span>
           </li>
           <li>
             <i class="bi bi-check-circle-fill"></i>
-            <span><strong>Automated calendar booking:</strong> The AI schedules bookings directly into your
-              calendar.</span>
+            <span><strong>Zero receptionist burnout:</strong> Triage routine logistics so your clinical team focuses 100% on patient care.</span>
           </li>
         </ul>
       </div>
@@ -189,10 +370,10 @@
 
   <!-- How It Works Section -->
   <section id="how-it-works" class="section-padding">
-    <div class="reveal">
-      <h2>A Simple, Turnkey Setup</h2>
-      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">We handle the technical heavy lifting
-        so you can focus on running your business.</p>
+    <div class="section-header reveal">
+      <div class="pill-badge">Seamless Integration</div>
+      <h2>A Turnkey, White-Glove Deployment</h2>
+      <p>We handle all technical ingestion, security safeguards, and calendar integration so your practice stays focused on care.</p>
     </div>
 
     <div class="steps-grid">
@@ -202,155 +383,145 @@
         <div class="step-icon">
           <i class="bi bi-database-fill-gear"></i>
         </div>
-        <h3>1. We Learn Your Business</h3>
-        <p>You provide your pricing sheet, FAQs, services, and scheduler. We feed this into your custom AI assistant so
-          it becomes an expert on your business.</p>
+        <h3>1. Clinical Rule Ingestion</h3>
+        <p>We ingest your practice specialties, intake questionnaires, accepted insurance networks, FAQs, and scheduling protocols to train your custom digital employee.</p>
       </div>
 
       <!-- Step 2 -->
       <div class="step-card reveal" style="transition-delay: 0.1s;">
         <div class="step-number">02</div>
         <div class="step-icon">
-          <i class="bi bi-rocket-takeoff-fill"></i>
+          <i class="bi bi-shield-fill-check"></i>
         </div>
-        <h3>2. We Launch Your Site</h3>
-        <p>We build a lightning-fast, high-converting website custom-branded for you and embed the intelligent AI
-          assistant seamlessly on your domain.</p>
+        <h3>2. BAA & Compliance Review</h3>
+        <p>We execute a formal Business Associate Agreement, verify clinical guardrails, configure crisis detection protocols, and test end-to-end encryption.</p>
       </div>
 
       <!-- Step 3 -->
       <div class="step-card reveal" style="transition-delay: 0.2s;">
         <div class="step-number">03</div>
         <div class="step-icon">
-          <i class="bi bi-graph-up-arrow"></i>
+          <i class="bi bi-rocket-takeoff-fill"></i>
         </div>
-        <h3>3. Grow on Autopilot</h3>
-        <p>The AI answers questions, qualifies prospects, books appointments, and sends clean lead notifications
-          straight to your text messages or CRM.</p>
+        <h3>3. 24/7 Practice Autopilot</h3>
+        <p>Your AI chat employee goes live on your website and patient portal, answering questions, pre-screening patients, and booking slots directly into your calendar.</p>
       </div>
     </div>
   </section>
 
-  <!-- ROI Calculator Section -->
+  <!-- Practice Impact & Care Expansion Calculator -->
   <section id="roi-calculator" class="section-padding">
-    <div class="reveal">
-      <h2>See Your Growth Potential</h2>
-      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">Find out how much hidden revenue you
-        can capture by answering website leads instantly.</p>
+    <div class="section-header reveal">
+      <div class="pill-badge">Measurable Practice Value</div>
+      <h2>Calculate Your Practice Growth & Captured Care</h2>
+      <p>Estimate the additional revenue and patient evaluations your practice can capture by responding to inquiries instantly.</p>
     </div>
 
     <div class="calculator-wrapper reveal">
-      <!-- Sliders -->
+      <!-- Inputs -->
       <div class="calc-inputs">
-        <!-- Monthly Traffic -->
+        <!-- Monthly Inquiries -->
         <div class="input-group">
           <div class="label-container">
-            <label for="slider-traffic">Estimated Monthly Website Visitors</label>
-            <span class="calc-val" id="val-traffic">1,000</span>
+            <label for="slider-traffic">Monthly Patient / Visitor Inquiries</label>
+            <span class="calc-val" id="val-traffic">1,500</span>
           </div>
-          <input type="range" id="slider-traffic" min="100" max="5000" step="50" value="1000">
+          <input type="range" id="slider-traffic" min="200" max="8000" step="50" value="1500">
         </div>
 
-        <!-- Average Job Value -->
+        <!-- Average Case / Treatment Value -->
         <div class="input-group">
           <div class="label-container">
-            <label for="slider-value">Average Customer / Job Value</label>
-            <span class="calc-val" id="val-value">$200</span>
+            <label for="slider-value">Average Patient / Case Lifetime Value</label>
+            <span class="calc-val" id="val-value">$850</span>
           </div>
-          <input type="range" id="slider-value" min="50" max="2000" step="25" value="200">
+          <input type="range" id="slider-value" min="150" max="3500" step="50" value="850">
         </div>
 
-        <!-- Missed Leads Capture -->
+        <!-- After-Hours Recovery -->
         <div class="input-group">
           <div class="label-container">
-            <label for="slider-conversion">Lead Capture Increase with AI</label>
-            <span class="calc-val" id="val-conversion">15%</span>
+            <label for="slider-conversion">After-Hours Care Conversion Increase</label>
+            <span class="calc-val" id="val-conversion">18%</span>
           </div>
-          <input type="range" id="slider-conversion" min="5" max="40" step="1" value="15">
+          <input type="range" id="slider-conversion" min="5" max="45" step="1" value="18">
         </div>
       </div>
 
-      <!-- Display Result -->
+      <!-- Results Display -->
       <div class="calc-results">
-        <div class="result-title text-muted">Estimated Annual Revenue Recovered</div>
-        <div class="result-value" id="calc-revenue">$36,000</div>
-        <p class="result-note text-muted">Based on converting more casual website visitors into confirmed customers
-          before they click away.</p>
+        <div class="result-title">Estimated Annual Practice Value Captured</div>
+        <div class="result-value" id="calc-revenue">$2,754,000</div>
+        <p class="result-note">Based on converting after-hours website inquiries into confirmed patient intake visits rather than losing them to competing clinics.</p>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
-  <section id="pricing" class="section-padding">
-    <div class="reveal">
-      <h2>Transparent, Flat-Rate Plans</h2>
-      <p style="text-align: center; max-width: 600px; margin: 0 auto 2rem auto;">Simple pricing built to scale with your
-        business growth. No hidden setup fees.</p>
+  <!-- Solutions & Practice Deployments Section (NO PRICES DISCLOSED) -->
+  <section id="deployments" class="section-padding">
+    <div class="section-header reveal">
+      <div class="pill-badge">Tailored Deployments</div>
+      <h2>Enterprise Solutions for Clinics & Practices</h2>
+      <p>Custom-architected around your practice specialty, clinical guidelines, and EHR integrations. All healthcare packages include signed BAAs.</p>
     </div>
 
     <div class="pricing-grid">
-      <!-- Plan 1 -->
+      <!-- Tier 1: Practice Portal & Intake -->
       <div class="pricing-card reveal">
         <div class="pricing-header">
-          <h3>Starter Website</h3>
-          <p class="desc">A fast, modern website to establish your business brand online.</p>
-          <div class="price">
-            <span class="price-currency">$</span>
-            <span class="price-amount">149</span>
-            <span class="price-term">/mo</span>
-          </div>
+          <h3>Practice Portal & Basic Intake</h3>
+          <p class="desc">For solo practitioners and boutique wellness clinics establishing a modern digital presence.</p>
+          <span class="tier-badge-highlight">Essential Care Suite</span>
         </div>
         <ul class="pricing-features">
-          <li><i class="bi bi-check-lg"></i> Custom Modern Website</li>
-          <li><i class="bi bi-check-lg"></i> Mobile-Responsive Layout</li>
-          <li><i class="bi bi-check-lg"></i> Basic Contact & Lead Forms</li>
-          <li><i class="bi bi-check-lg"></i> Secure SSL & Fast Hosting</li>
-          <li><i class="bi bi-check-lg"></i> Monthly Content Updates</li>
+          <li><i class="bi bi-check-lg"></i> Custom Modern Practice Website</li>
+          <li><i class="bi bi-check-lg"></i> 24/7 Mobile Patient Intake Portal</li>
+          <li><i class="bi bi-check-lg"></i> Basic Calendar Booking Integration</li>
+          <li><i class="bi bi-check-lg"></i> Instant SMS & Email Lead Notifications</li>
+          <li><i class="bi bi-check-lg"></i> SSL & Ultra-Fast Managed Cloud Hosting</li>
+          <li><i class="bi bi-check-lg"></i> Standard Practice FAQ Ingestion</li>
         </ul>
-        <button class="btn btn-secondary" onclick="openNeemChat('Starter Website')">Get Started</button>
+        <button class="btn btn-secondary" onclick="openNeemChat('Practice Portal & Basic Intake Proposal')">Request Custom Proposal</button>
       </div>
 
-      <!-- Plan 2 (Featured) -->
+      <!-- Tier 2: Clinical & Psychiatric Suite (Flagship) -->
       <div class="pricing-card featured reveal" style="transition-delay: 0.1s;">
         <span class="featured-tag">Most Popular</span>
         <div class="pricing-header">
-          <h3>AI Growth Engine</h3>
-          <p class="desc">Our flagship package. A high-converting website integrated with custom AI.</p>
-          <div class="price">
-            <span class="price-currency">$</span>
-            <span class="price-amount">299</span>
-            <span class="price-term">/mo</span>
-          </div>
+          <h3>Clinical & Psychiatric Suite</h3>
+          <p class="desc">For psychiatric centers, dental practices, and specialty clinics requiring full HIPAA compliance.</p>
+          <span class="tier-badge-highlight">Clinical Standard</span>
         </div>
         <ul class="pricing-features">
-          <li><i class="bi bi-check-lg"></i> Everything in Starter</li>
-          <li><i class="bi bi-check-lg"></i> <strong>Custom AI Assistant</strong></li>
-          <li><i class="bi bi-check-lg"></i> Trained on Business Rules & FAQs</li>
-          <li><i class="bi bi-check-lg"></i> Automated Appointment Booking</li>
-          <li><i class="bi bi-check-lg"></i> Instant SMS Lead Notifications</li>
+          <li><i class="bi bi-check-lg"></i> Everything in Practice Portal</li>
+          <li><i class="bi bi-check-lg"></i> <strong>HIPAA-Compliant AI Chat Employee</strong></li>
+          <li><i class="bi bi-check-lg"></i> <strong>Signed Business Associate Agreement (BAA)</strong></li>
+          <li><i class="bi bi-check-lg"></i> <strong>988 Crisis Detection & Escalation Safeguards</strong></li>
+          <li><i class="bi bi-check-lg"></i> Adult & Adolescent Psychiatric Intake Flows</li>
+          <li><i class="bi bi-check-lg"></i> Automated Insurance Superbill & Benefit Guidance</li>
+          <li><i class="bi bi-check-lg"></i> Direct EHR/PMS Sync (Epic, Kareo, Dentrix, Calendly)</li>
+          <li><i class="bi bi-check-lg"></i> Real-time ePHI Sanitization & Entity Masking</li>
         </ul>
-        <button class="btn btn-primary" onclick="openNeemChat('AI Growth Engine')">Get Started</button>
+        <button class="btn btn-primary" onclick="openNeemChat('Clinical & Psychiatric Suite Live Demo')">Schedule Clinical Demo</button>
       </div>
 
-      <!-- Plan 3 -->
+      <!-- Tier 3: Enterprise Health Network -->
       <div class="pricing-card reveal" style="transition-delay: 0.2s;">
         <div class="pricing-header">
-          <h3>Local Authority</h3>
-          <p class="desc">For established service providers wanting advanced automation.</p>
-          <div class="price">
-            <span class="price-currency">$</span>
-            <span class="price-amount">499</span>
-            <span class="price-term">/mo</span>
-          </div>
+          <h3>Enterprise Health Network & MSOs</h3>
+          <p class="desc">For multi-location medical centers, behavioral health hospitals, and managed practice networks.</p>
+          <span class="tier-badge-highlight">Enterprise Custom</span>
         </div>
         <ul class="pricing-features">
-          <li><i class="bi bi-check-lg"></i> Everything in Growth Engine</li>
-          <li><i class="bi bi-check-lg"></i> Multi-Platform AI (Web, SMS)</li>
-          <li><i class="bi bi-check-lg"></i> CRM & Calendar Syncing</li>
-          <li><i class="bi bi-check-lg"></i> Advanced SEO Optimization</li>
-          <li><i class="bi bi-check-lg"></i> Dedicated Account Manager</li>
+          <li><i class="bi bi-check-lg"></i> Everything in Clinical & Psychiatric Suite</li>
+          <li><i class="bi bi-check-lg"></i> Multi-Location & Department Patient Routing</li>
+          <li><i class="bi bi-check-lg"></i> Custom Bi-Directional EHR API Connectors</li>
+          <li><i class="bi bi-check-lg"></i> Dedicated Healthcare Compliance Officer</li>
+          <li><i class="bi bi-check-lg"></i> Custom Service Level Agreements (99.9% Uptime)</li>
+          <li><i class="bi bi-check-lg"></i> Multi-Agent Clinical Routing (Intake, Billing, Triage)</li>
+          <li><i class="bi bi-check-lg"></i> Priority 24/7 Clinical Support Hotline</li>
         </ul>
-        <button class="btn btn-secondary" onclick="openNeemChat('Local Authority')">Get Started</button>
+        <button class="btn btn-secondary" onclick="openNeemChat('Enterprise Health Network Discussion')">Speak with an Executive</button>
       </div>
     </div>
   </section>
@@ -360,62 +531,41 @@
     <div class="footer-content">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="logo-leaf" width="28" height="28"
-            style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; margin-right: 4px;">
-            <!-- Left Leg (Tech Grid / Nodes) -->
-            <line x1="8" y1="26" x2="8" y2="8" stroke="var(--text-main)" stroke-width="2.5" />
-            <circle cx="8" cy="8" r="1.5" fill="var(--text-main)" stroke="none" />
-            <circle cx="8" cy="17" r="1.5" fill="var(--text-main)" stroke="none" />
-            <circle cx="8" cy="26" r="1.5" fill="var(--text-main)" stroke="none" />
-            <path d="M8 12h3.5" stroke="var(--text-main)" stroke-width="1.5" />
-            <circle cx="11.5" cy="12" r="1" fill="var(--text-main)" stroke="none" />
-            <path d="M8 20h3.5" stroke="var(--text-main)" stroke-width="1.5" />
-            <circle cx="11.5" cy="20" r="1" fill="var(--text-main)" stroke="none" />
-            <!-- Diagonal Connector -->
-            <line x1="8" y1="8" x2="22" y2="24" stroke="var(--text-main)" stroke-width="2.5" />
-            <!-- Right Leg / Neem Leaf -->
-            <line x1="22" y1="26" x2="22" y2="12" stroke="var(--primary-glow)" stroke-width="2.5" />
-            <!-- Leaf shape -->
-            <path d="M22 12 C26 9, 27 6, 22 2 C17 6, 18 9, 22 12 Z" fill="rgba(217, 119, 6, 0.15)"
-              stroke="var(--primary-glow)" stroke-width="2" />
-            <!-- Leaf vein -->
-            <line x1="22" y1="10" x2="22" y2="4" stroke="var(--primary-glow)" stroke-width="1.5" />
-          </svg>
-          <span>Neem<span class="text-amber">Tech</span>AI</span>
+          <div class="logo-icon-wrap">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <span>Neem<span class="text-emerald">Tech</span>AI</span>
         </a>
-        <p>Empowering local service businesses with modern web design and intelligent conversational AI assistants.</p>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Empowering psychiatric centers, dental groups, and medical practices with intelligent, 24/7 HIPAA-compliant AI chat employees that elevate patient access and streamline clinical operations.</p>
+        <p class="footer-disclaimer">Regulatory Notice: Neem Tech AI delivers operational workflow, scheduling, and intake automation. Our systems operate under strict administrative and technical HIPAA safeguards and are designed to facilitate communication, not provide emergency medical advice or psychiatric diagnostic care.</p>
       </div>
+
       <div class="footer-links-col">
-        <h5>Services</h5>
+        <h5>Solutions</h5>
         <ul>
-          <li><a href="#hero">AI Assistants</a></li>
-          <li><a href="#hero">Web Design</a></li>
-          <li><a href="#roi-calculator">ROI Analytics</a></li>
-          <li><a href="#pricing">Monthly Hosting</a></li>
+          <li><a href="#specialties">Psychiatric Centers</a></li>
+          <li><a href="#specialties">Dental Practices</a></li>
+          <li><a href="#specialties">Medical Clinics</a></li>
+          <li><a href="#security">HIPAA & BAA Safeguards</a></li>
+          <li><a href="#roi-calculator">Practice Impact Calculator</a></li>
+          <li><a href="#deployments">Custom Deployments</a></li>
         </ul>
       </div>
+
       <div class="footer-links-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="#logo-link">About Us</a></li>
-          <li><a href="#problem-solution">Why AI</a></li>
-          <li><a href="#pricing">Pricing Plans</a></li>
-          <li><a href="mailto:info@neemtechai.com">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-links-col">
-        <h5>Contact</h5>
+        <h5>Contact & Audits</h5>
         <ul>
           <li><a href="mailto:info@neemtechai.com"><i class="bi bi-envelope-fill"></i> info@neemtechai.com</a></li>
           <li><a href="tel:5551234567"><i class="bi bi-telephone-fill"></i> (555) 123-4567</a></li>
           <li><span class="text-muted"><i class="bi bi-geo-alt-fill"></i> San Francisco, CA</span></li>
+          <li><a href="javascript:void(0);" onclick="openNeemChat('BAA & Security Inquiry')"><i class="bi bi-file-earmark-lock2-fill"></i> Request BAA Packet</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div>&copy; 2026 Neem Tech AI. All rights reserved.</div>
-      <div>Designed for rapid loading & conversion.</div>
+      <div>&copy; 2026 Neem Tech AI LLC. All rights reserved.</div>
+      <div>Engineered for clinical privacy & maximum patient conversion.</div>
     </div>
   </footer>
 
